@@ -1,0 +1,45 @@
+{
+  "model": {
+    "layers": [
+      -1,
+      -2,
+      -3,
+      -4
+    ],
+    "weights": "default",
+    "activation": {
+      "name": "gelu_new"
+    },
+    "pre_classifier": 2048,
+    "dropout": 0.2,
+    "max_seq_len": 64,
+    "name": "bert"
+  },
+  "training": {
+    "task1": "regression",
+    "task2": "classification",
+    "lexicon": "default",
+    "lexicon_size": 0,
+    "multi_task": 1,
+    "task_loss_weights": [0.75, 0.25],
+    "batch_size": 64,
+    "seed": 1234,
+    "num_labels1": 3,
+    "num_labels2": 6,
+    "multi_label": 0,
+    "target_names1": ["valence", "arousal", "dominance"],
+    "target_names2": ["neutral", "anger", "fear", "joy", "love", "sadness"],
+    "epochs": "default",
+    "files1": {
+      "train1": "default",
+      "test1": "default"
+    },
+    "files2": {
+      "train2": "default",
+      "test2": "default"
+    },
+    "output_dir": "default",
+    "pred_path1": "default",
+    "pred_path2": "default"
+  }
+}
