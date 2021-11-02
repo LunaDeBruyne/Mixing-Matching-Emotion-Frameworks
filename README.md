@@ -1,5 +1,6 @@
 # Mixing-Matching-Emotion-Frameworks
 Code for the paper "Mixing and matching emotion frameworks: Investigating cross-framework transfer learning for Dutch emotion detection" in Electronics.
+The code is based on a text classification pipeline developed by Bram Vanroy. The base code can be found at https://github.com/BramVanroy/lt3-2019-transformer-trainer.
 
 REQUIREMENTS:
 - Python 3.6
